@@ -1,0 +1,18 @@
+/* 
+    Classes
+*/
+
+.contact input, .contact textarea, .contact label {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.contact .big-button {
+    width: auto;
+    padding: .5rem 1rem;
+}

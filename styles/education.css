@@ -1,0 +1,143 @@
+/* 
+    Classes
+*/
+.cap-icon {
+    height: 1rem;
+}
+
+.degree-div {
+    display: flex;
+    align-content: space-between;
+}
+
+.degree-div p {
+    margin: 0;
+}
+
+.degree-div-left {
+    flex-grow: 1;
+}
+
+.degree-div-right {
+    text-align: right;
+}
+
+.accordion-tab {
+    border-bottom: .15rem solid var(--dark-highlight-color);
+    position: relative;
+    padding-bottom: .8rem;
+    margin-bottom: .8rem;
+    box-sizing: border-box;
+}
+
+/* .accordion-tab::after {
+    content: var(--at-content, "+");
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: var(--highlight-color);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+} */
+
+.accordion-tab .bx {
+    position: absolute;
+    color: var(--text-highlight-color);
+    font-size: 1.1rem;
+    padding: 0rem;
+    background-color: var(--dark-highlight-color);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, .67rem);
+    -moz-transform: translate(-50%, .67rem);
+    -o-transform: translate(-50%, .67rem);
+    -ms-transform: translate(-50%, .67rem);
+    transform: translate(-50%, .67rem);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.accordion-tab .rotated {
+    -webkit-transform: translate(-50%, .67rem) rotate(180deg);
+    -moz-transform: translate(-50%, .67rem) rotate(180deg);
+    -o-transform: translate(-50%, .67rem) rotate(180deg);
+    -ms-transform: translate(-50%, .67rem) rotate(180deg);
+    transform: translate(-50%, .67rem) rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0rem;
+    list-style: lower-alpha;
+    transition: all .3s linear;
+}
+
+.accordion .accordion-content:first_child {
+    padding-top: 0rem;
+}
+
+/* .accordion-tab .bxs-down-arrow {
+    padding-top: .4rem;
+    padding-bottom: .1rem;
+}
+
+.accordion-tab .bxs-up-arrow {
+    padding-top: .1rem;
+    padding-bottom: .4rem;
+} */
+
+/* .accordion-tab div {
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--highlight-color);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+} */
+
+.accordion-tab:hover {
+    cursor: pointer;
+}
+
+/* 
+    Ids
+*/
+
+#college-education h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .degree-div {
+        flex-direction: column;
+    }
+    .degree-div-right {
+        text-align: left;
+    }
+    .degree-div-right p {
+        margin-top: 0;
+    }
+    .degree-div-right br, .degree-div-right .empty-p {
+        display: none;
+    }
+}

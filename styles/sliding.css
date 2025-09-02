@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sliding-option-widget {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliding-option-container {
+    width: 100%;
+}
+
+.sliding-option {
+    width: 100%;
+    background-color: gray;
+}
+
+.sliding-option-arrow-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 5rem;
+    margin: 0;
+}
+
+.sliding-option-left-arrow i, .sliding-option-right-arrow i {
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.sliding-option-left-arrow i:hover, .sliding-option-right-arrow i:hover {
+    cursor: pointer;
+}
+
+.project-picture-with-intro .kw-div {
+    margin-top: 1rem;
+}
+
+/* .sliding-option-left-arrow {
+    left: 1rem;
+}
+
+.sliding-option-right-arrow {
+    right: 1rem;
+} */

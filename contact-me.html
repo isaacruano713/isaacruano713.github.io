@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <link rel='icon' href="./images/favicon32pxsolid.png" type='image/png'/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact-me.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+  </head>
+  <body>
+    <header class="sticky">
+      <nav id="site-nav">
+        <h4 id="name-header">Isaac Ruano</h4>
+        <div class="empty-div"></div>
+        <div class="menu">
+          <i class='bx bx-menu'></i>
+          <div class="submenu" id="site-nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a class="selected-nav-link">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+    <main>
+      <h1>Contact Me</h1>
+      <div class="contact">
+        <form method="POST" action="https://formsubmit.co/isaacruano713@gmail.com">
+          <label for="first-name">First Name</label><br>
+          <input type="text" id="first-name" name="first_name" required><br>
+          <label for="last-name">Last Name</label><br>
+          <input type="text" id="last-name" name="last_name" required><br>
+          <label for="your-email">Email</label><br>
+          <input type="email" id="your-email" name="your_email" required><br>
+          <label for="enquiry">Questions / Comments</label><br>
+          <textarea id="enquiry" name="enquiry" required rows="5"></textarea>
+          <input type="hidden" name="_replyto" value="isaacruano713@gmail.com">
+          <input type="hidden" name="_next" value="https://portfolio-713.s3.us-east-2.amazonaws.com/Data+Analyst+Portfolio/contact-me.html">
+          <input type="submit" value="Submit" class="big-button">
+        </form>
+      </div>
+    </main>
+    
+    <footer>
+      <div id="footer-links">
+        <div class="footer-links-line"></div>
+        <div>
+          <nav>
+            <a class="logo-link" href="https://www.linkedin.com/in/isaac-ruano-24a4b3309" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a class="logo-link round-logo-link" href="https://github.com/isaacruano713" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-github'></i>
+            </a>
+          </nav>
+        </div>
+        <div class="footer-links-line"></div>
+      </div>
+      <br>
+      <p style="text-align: center;">Copyright &copy; 2024 Isaac Ruano</p>
+      <div id="contact-info">
+        <a class="light-mode" href="mailto: isaacruano713@gmail.com">isaacruano713@gmail.com</a>
+        <p>|</p>
+        <a class="light-mode" href="tel:5409601965">(540) 960-1965</a>
+      </div>
+    </footer>
+    <script src="./scripts/contact-me.js"></script>
+  </body>
+</html>

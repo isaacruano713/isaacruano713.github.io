@@ -1,0 +1,60 @@
+/* 
+    Ids
+*/
+
+h1 {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+main h1:first-child {
+    margin-top: 0;
+}
+
+#about-me {
+    display: flex;
+}
+
+#my-picture {
+    width: 35%;
+    object-fit: cover;
+    display: block;
+}
+
+#socials {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    padding: 5% 0 0 0;
+    flex-grow: 1;
+}
+
+#self-intro p:first-child {
+    margin-top: 0;
+}
+
+#socials p, #socials a {
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    #my-picture {
+        box-shadow: 0px 0px 5px 1px var(--shadow-color);
+        animation: beating-shadow 3s infinite;
+    }
+}
+
+/* #socials a {
+    color: var(--text-color);
+    text-decoration: underline solid var(--text-color);
+    transition: color .4s, text-decoration .4s;
+} */
+
+/* #socials a:hover {
+    color: var(--dark-highlight-color);
+    text-decoration: underline solid var(--dark-highlight-color);
+} */

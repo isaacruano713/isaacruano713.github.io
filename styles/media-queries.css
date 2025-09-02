@@ -1,0 +1,142 @@
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {  
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #site-nav .bx {
+        display: block;
+    }
+    #site-nav .menu {
+        background-color: --var(--second-text-color);
+        flex-direction: column;
+        position: relative;
+    }
+
+    #site-nav .menu .submenu {
+        max-height: 0px;
+        position: absolute;
+        background-color: var(--fifth-bg-color);
+        flex-direction: column;
+        right: 0;
+        bottom: 0;
+        width: 300%;
+        transform: translate(0, 100%);
+        transition: max-height .5s;
+        overflow: hidden;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    #site-nav .menu .open {
+        max-height: 13.5rem;
+    }
+
+    #site-nav .menu .submenu:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+
+    #site-nav .nav-link:hover {
+        border-color: transparent;
+        background-color: var(--sixth-bg-color);
+    }
+
+    #site-nav .selected-nav-link {
+        background-color: var(--sixth-bg-color);
+        border: transparent;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contact-info {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    #contact-info p {
+        display: none;
+    }
+    #footer-links nav {
+        padding: 0 2rem;
+    }
+    .big-button, a.big-button {
+        width: 100%;
+    }
+    #about-me {
+        flex-direction: column-reverse;
+    }
+    #about-me img {
+        width: 50%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        margin: 5% auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {  
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 100px) {
+    .kw1, .kw2, .kw3, .kw4, .kw5 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    main {
+        padding: 1rem 10% 3rem 10%;
+    }
+    
+    header {
+        padding: 0% 12%;
+    }
+
+    footer {
+        padding: 2rem 12%;
+    }
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 1rem 15% 3rem 15%;
+    }
+    
+    header {
+        padding: 0% 15%;
+    }
+
+    footer {
+        padding: 2rem 15%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    main {
+        padding: 1rem 20% 3rem 20%;
+    }
+    
+    header {
+        padding: 0% 20%;
+    }
+
+    footer {
+        padding: 2rem 20%;
+    }
+}
