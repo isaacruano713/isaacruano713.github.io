@@ -6,11 +6,11 @@
 /* h1 {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
-} */
+}
 
 main h1:first-child {
     margin-top: 0;
-}
+} */
 
 #about-me {
     display: flex;
@@ -60,3 +60,4 @@ main h1:first-child {
     text-decoration: underline solid var(--dark-highlight-color);
 
 } */
+
