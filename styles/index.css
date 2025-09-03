@@ -2,10 +2,11 @@
     Ids
 */
 
-h1 {
+/*  Uncomment if the <h2> heading is uncommented */
+/* h1 {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
-}
+} */
 
 main h1:first-child {
     margin-top: 0;
@@ -57,4 +58,5 @@ main h1:first-child {
 /* #socials a:hover {
     color: var(--dark-highlight-color);
     text-decoration: underline solid var(--dark-highlight-color);
+
 } */
